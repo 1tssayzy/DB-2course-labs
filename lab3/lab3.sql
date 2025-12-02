@@ -11,11 +11,15 @@ SELECT password FROM users
 WHERE user_id = 6 or username = 'john_travel'
 
 SELECT * FROM users
-WHERE login LIKE 'a%';
+WHERE username LIKE 'a%';
 
 UPDATE users 
 SET username = 'zxc_1000-7', country = 'Germany'
 WHERE user_id = 4;
+
+UPDATE users 
+SET username = 'zxc_1000-7', country = 'Germany'
+WHERE id = 5;
 
 
 INSERT INTO users (username,email,country) VALUES ('jack_rassel','fladdd123@gmail.com','Ukraine')
