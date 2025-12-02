@@ -1,29 +1,29 @@
 SELECT * FROM users
-WHERE login = 'alice_green';
+WHERE username = 'maria_art';
 
 SELECT * FROM users
-WHERE id = 5;
+WHERE user_id = 5;
 
-SELECT login FROM users
-WHERE id = 6;
+SELECT username FROM users
+WHERE user_id = 6;  
 
 SELECT password FROM users
-WHERE id = 6 or login = 'frank_white'
+WHERE user_id = 6 or username = 'john_travel'
 
 SELECT * FROM users
 WHERE login LIKE 'a%';
 
 UPDATE users 
-SET login = 'zxc_1000-7', avatar = '/uploads/avatars/shadow-fiend.png'
-WHERE id = 4;
+SET username = 'zxc_1000-7', country = 'Germany'
+WHERE user_id = 4;
 
 
-INSERT INTO users (login,password,avatar) VALUES ('tosik_pupsik','akjdf234d1234d%&^$Gdfasdfas',DEFAULT)
-INSERT INTO users (login,password,avatar) VALUES ('tosik_drotik2','fadsfahjksfahsdjkaasdfas',DEFAULT)
-
-DELETE FROM users 
-WHERE login = 'tosik_drotik2' and avatar = DEFAULT
+INSERT INTO users (username,email,country) VALUES ('jack_rassel','fladdd123@gmail.com','Ukraine')
+INSERT INTO users (username,email,country) VALUES ('basedboss','meepo5nas@gmail.com','Italy')
 
 DELETE FROM users 
-WHERE id = 1 or avatar = DEFAULT
+WHERE username = 'alex_photo' AND county = 'Ukraine'
+
+DELETE FROM users 
+WHERE user_id = 1 
 
